@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Music App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Best of Albums- No Copyright Sounds</h1>
+            <!-- Here if we did not give the "src in img tag", it doesn't matter, they are set by using the javascript using "coverPath". -->
+            <!-- Here if we did not give the "Name of the song in the span tag", it doesn't matter, they are set by using the javascript using "songName". -->
+            
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="covers/cover1.jpg" alt="1">
+                    <span class="songName">Meri Jindagi Hai Tu</span>
+                    <span class="songlistplay">  
+                        <span class="timestamp">05:34 <i id="0" class="far songItemPlay fa-play-circle"></i></span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover2.jpg" alt="1">
+                    <span class="songName">Badhai Do Song</span>
+                    <span class="songlistplay">  
+                        <span class="timestamp">05:34 <i id="1" class="far songItemPlay fa-play-circle"></i></span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover3.jpg" alt="1">
+                    <span class="songName">Street Dancer Song</span>
+                    <span class="songlistplay">  
+                        <span class="timestamp">05:34 <i id="2" class="far songItemPlay fa-play-circle"></i></span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover4.jpg" alt="1">
+                    <span class="songName">Halamithi Habibo song</span>
+                    <span class="songlistplay">  
+                        <span class="timestamp">05:34 <i id="3" class="far songItemPlay fa-play-circle"></i></span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover5.jpg" alt="1">
+                    <span class="songName">Hawaon Ne Yeh Kaha Song</span>
+                    <span class="songlistplay">  
+                        <span class="timestamp">05:34 <i id="4" class="far songItemPlay fa-play-circle"></i></span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover6.jpg" alt="1">
+                    <span class="songName">Kesariya Tera Ishq Hai Piya Song</span>
+                    <span class="songlistplay">  
+                        <span class="timestamp">05:34 <i id="5" class="far songItemPlay fa-play-circle"></i></span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover7.jpg" alt="1">
+                    <span class="songName">KHAIRIYAT , CHHICHHORE Song</span>
+                    <span class="songlistplay">  
+                        <span class="timestamp">05:34 <i id="6" class="far songItemPlay fa-play-circle"></i></span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover8.jpg" alt="1">
+                    <span class="songName">Aan Milo Sajna Song</span>
+                    <span class="songlistplay">  
+                        <span class="timestamp">05:34 <i id="7" class="far songItemPlay fa-play-circle"></i></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- icons-->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="Playing Music" id="gif"> <span id="masterSongName">Meri Jindagi Hai Tu</span>
+        </div>
+        <div class="copyright">
+            &copy;Copyright &copy; 2022 Ashish Gulab | All rights reserved
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/4f80529cc7.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
